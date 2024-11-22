@@ -20,7 +20,7 @@ const accounts = [
       sessionStorage.setItem("loggedInUser", JSON.stringify(user));
   
       alert(`Welcome, ${user.firstName} ${user.lastName}!`);
-      window.location.href = "#";
+      window.location.href = "../MainPage/home.html";
     } else {
       alert("Invalid email or password. Please try again.");
     }

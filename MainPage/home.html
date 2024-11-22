@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <h1>Home</h1>
+    <div class="header-icons">
+      <div class="icon" onclick="addRoom()">
+          <i class="fas fa-plus-circle"></i>
+          <span>Add Rooms</span>
+      </div>
+      <div class="icon">
+        <a href="./Account/account.html">
+          <i class="fas fa-user-circle"></i>
+          <span id="user-name">Account</span>
+        </a>
+      </div>
+      <div class="icon settings-menu">
+        <i class="fas fa-cog" onclick="toggleSettingsMenu()"></i>
+        <span>Settings</span>
+        <div class="dropdown-menu hidden" id="settingsDropdown">
+          <button class="dropdown-item" onclick="logout()">Logout</button>
+        </div>
+      </div>      
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Shared Spaces</h2>
+      <div class="room-grid">
+        <div class="room" onclick="window.location.href='livingroom.html'">
+          <i class="fas fa-couch"></i>
+          <span>Livingroom</span>
+        </div>
+        <div class="room" onclick="window.location.href='kitchen.html'">
+          <i class="fas fa-utensils"></i>
+          <span>Kitchen</span>
+        </div>
+        <div class="room" onclick="window.location.href='frontdoor.html'">
+          <i class="fas fa-door-open"></i>
+          <span>Front Door</span>
+        </div>
+        <div class="room" onclick="window.location.href='backdoor.html'">
+          <i class="fas fa-door-closed"></i>
+          <span>Back Door</span>
+        </div>
+        <div class="room" onclick="window.location.href='cargate.html'">
+          <i class="fas fa-car"></i>
+          <span>Car Gate</span>
+        </div>
+        <div class="room" onclick="window.location.href='garage.html'">
+          <i class="fas fa-warehouse"></i>
+          <span>Garage</span>
+        </div>
+        <div class="room" onclick="window.location.href='garden.html'">
+          <i class="fas fa-seedling"></i>
+          <span>Garden</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Parents' Spaces</h2>
+      <div class="room-grid">
+        <div class="room" onclick="window.location.href='parentsroom.html'">
+          <i class="fas fa-bed"></i>
+          <span>Parents Room</span>
+        </div>
+        <div class="room" onclick="window.location.href='parentsbathroom.html'">
+          <i class="fas fa-bath"></i>
+          <span>Parents Bathroom</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Grandparents' Spaces</h2>
+      <div class="room-grid">
+        <div class="room" onclick="window.location.href='grandparentsroom.html'">
+          <i class="fas fa-bed"></i>
+          <span>Grandparents Room</span>
+        </div>
+        <div class="room" onclick="window.location.href='grandparentsbathroom.html'">
+          <i class="fas fa-bath"></i>
+          <span>Grandparents Bathroom</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kids' Spaces</h2>
+      <div class="room-grid">
+        <div class="room" onclick="window.location.href='teenagerroom.html'">
+          <i class="fas fa-bed"></i>
+          <span>Teenager Room</span>
+        </div>
+        <div class="room" onclick="window.location.href='twinsroom.html'">
+          <i class="fas fa-bed"></i>
+          <span>Twins Room</span>
+        </div>
+        <div class="room" onclick="window.location.href='kidsbathroom.html'">
+          <i class="fas fa-bath"></i>
+          <span>Kids Bathroom</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="home.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ document.getElementById("register-form").addEventListener("submit", function (ev
   
     alert(`Account successfully created for ${firstName} ${lastName}`);
     
-    window.location.href = "#";
+    window.location.href = "../MainPage/home.html";
   });
   
   function redirectToLogin() {
