@@ -26,3 +26,7 @@ const accounts = [
     }
   });
   
+  function redirectToRegister() {
+    window.location.href = "../Register/register.html";
+  }
+  

@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="login.css">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="register.css">
 </head>
 <body>
   <div class="background">
     <div class="container">
-      <h1>LOGIN</h1>
-      <form id="login-form">
+      <h1>REGISTER</h1>
+      <form id="register-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" placeholder="Enter your last name" required>
+
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Enter your email" required>
+
         <label for="password">Password:</label>
         <input type="password" id="password" placeholder="Enter your password" required>
-        <button type="submit" class="login-btn">SIGN IN</button>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="submit" class="register-btn">SIGN UP</button>
       </form>
-      <p class="register-link">Don't have an account? <a href="../Register/register.html">Register Here</a></p>
+      <p class="login-link">Already have an account? <a href="../Login/login.html">Sign In Here</a></p>
     </div>
   </div>
   <footer>
@@ -32,6 +43,6 @@
       </nav>
     </div>
   </footer>
-  <script src="login.js"></script>
+  <script src="register.js"></script>
 </body>
 </html>
