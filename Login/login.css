@@ -1,0 +1,111 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    background: linear-gradient(to bottom right, #0f9b0f, #00b4db);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .container h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+    text-align: left;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #ffffff;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(240, 229, 72);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #e6922a;
+  }
+  
+  .register-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .register-link a {
+    color: rgb(240, 229, 72);
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container nav {
+    margin-top: 5px;
+  }
+  
+  footer a {
+    color: #0078d4;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer span {
+    color: #888;
+    margin: 0 5px;
+  }
+  

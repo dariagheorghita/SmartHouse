@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Controller</title>
+  <link rel="stylesheet" href="tv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="tv-container">
+    <div class="back-button">
+      <a href="/MainPage/Rooms/Bedrooms/Grandparents/grandparentsroom.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <h1>TV Controller</h1>
+    <div class="controls-container">
+      <div class="control-card" id="powerCard" onclick="togglePower()">
+        <i class="fas fa-power-off"></i>
+        <p id="powerStatus">Turn On</p>
+      </div>
+      <div class="control-card" id="volumeCard" onclick="adjustVolume()">
+        <i class="fas fa-volume-up"></i>
+        <p>Volume: <span id="volumeValue">50</span>%</p>
+      </div>
+      <div class="control-card" id="channelCard" onclick="changeChannel()">
+        <i class="fas fa-tv"></i>
+        <p>Channel: <span id="channelValue">1</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="tv.js"></script>
+</body>
+</html>
