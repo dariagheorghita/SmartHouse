@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alarm-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ff9800;
+}
+
+.back-button a:hover {
+    color: #e6922a;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.status-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+Add orange highlight effect for active status message
+.status-message.active {
+    background-color: #ffecd6;
+    border-color: #ff9800;
+    color: #ff9800;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.control-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 150px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.control-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.control-card i {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.control-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.control-card.active {
+    border: 2px solid #ff9800;
+    background-color: #ffecd6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+} */
+
+.control-card.active i {
+    color: #ff9800;
+}
+
+.control-card.active p {
+    color: #ff9800;
+}
