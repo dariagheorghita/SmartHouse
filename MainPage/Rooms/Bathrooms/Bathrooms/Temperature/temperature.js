@@ -1,13 +1,17 @@
 let currentTemperature = 22;
 
 function increaseTemperature() {
-    currentTemperature++;
-    updateTemperatureDisplay();
+    if(currentTemperature < 26){
+        currentTemperature++;
+        updateTemperatureDisplay();
+    }
 }
 
 function decreaseTemperature() {
-    currentTemperature--;
-    updateTemperatureDisplay();
+    if (currentTemperature > 18){
+        currentTemperature--;
+        updateTemperatureDisplay();
+    }
 }
 
 function setTemperature() {
