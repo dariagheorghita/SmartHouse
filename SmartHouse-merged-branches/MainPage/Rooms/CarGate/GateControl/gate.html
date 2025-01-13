@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gate Controls</title>
+  <link rel="stylesheet" href="gate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="gate-container">
+    <div class="back-button">
+      <a href="/MainPage/Rooms/CarGate/carGate.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <h1>Gate Control</h1>
+    <div class="gate-display">
+      <p>Gate Status:</p>
+      <span id="gateStatus">Closed</span>
+    </div>
+    <div class="gate-controls">
+      <button class="control-button" onclick="openGate()">
+        <i class="fas fa-arrow-up"></i> Open
+      </button>
+      <button class="control-button" onclick="closeGate()">
+        <i class="fas fa-arrow-down"></i> Close
+      </button>
+    </div>
+  </div>
+  <script src="gate.js"></script>
+</body>
+</html>

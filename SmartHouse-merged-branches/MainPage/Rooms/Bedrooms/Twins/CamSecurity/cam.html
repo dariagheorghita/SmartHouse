@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cam Security</title>
+  <link rel="stylesheet" href="cam.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="cam-container">
+    <div class="back-button">
+      <a href="/MainPage/Rooms/Bedrooms/Twins/twinsroom.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <h1>Cam Security</h1>
+    <div class="cam-display">
+      <p>Camera Status:</p>
+      <span id="camStatus">Off</span>
+    </div>
+    <div class="cam-controls">
+      <button class="control-button" onclick="turnOnCam()">
+        <i class="fas fa-power-off"></i> Turn On
+      </button>
+      <button class="control-button" onclick="turnOffCam()">
+        <i class="fas fa-power-off"></i> Turn Off
+      </button>
+      <button class="control-button" onclick="rotateCam()">
+        <i class="fas fa-sync"></i> Rotate
+      </button>
+      <button class="control-button" onclick="motionDetection()">
+        <i class="fas fa-eye"></i> Motion Detection
+      </button>
+    </div>
+  </div>
+  <script src="cam.js"></script>
+</body>
+</html>

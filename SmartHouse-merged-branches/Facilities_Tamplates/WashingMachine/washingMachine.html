@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Washing Machine Controller</title>
+  <link rel="stylesheet" href="washingMachine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="washingMachine-container">
+    <div class="back-button">
+      <a href="#">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <h1>Washing Machine Controller</h1>
+    <div class="temperature-section">
+      <h2>Temperature</h2>
+      <div class="temperature-display">
+        <p>Current Temperature:</p>
+        <span id="currentTemperature">30</span><sup>°C</sup>
+      </div>
+    </div>
+    <div class="cycle-section">
+      <h2>Washing Cycle</h2>
+      <div class="cycle-display">
+        <p>Selected Cycle:</p>
+        <span id="currentCycle">Normal</span>
+      </div>
+      <div class="cycle-controls">
+        <button class="control-button" onclick="nextCycle()">
+          <i class="fas fa-sync-alt"></i> Next Cycle
+        </button>
+      </div>
+    </div>
+    <div class="action-section">
+      <h2>Actions</h2>
+      <div class="action-controls">
+        <button class="control-button start-button" onclick="startWashing()">
+          <i class="fas fa-play"></i> Start
+        </button>
+        <button class="control-button stop-button" onclick="stopWashing()">
+          <i class="fas fa-stop"></i> Stop
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="washingMachine.js"></script>
+</body>
+</html>

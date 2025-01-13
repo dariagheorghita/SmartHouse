@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Controls</title>
+  <link rel="stylesheet" href="window.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="window-container">
+    <div class="back-button">
+      <a href="/MainPage/Rooms/Bathrooms/KidsBathroom/kidsbathroom.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <h1>Window Controls</h1>
+    <div class="window-display">
+      <p>Window Status:</p>
+      <span id="windowStatus">Closed</span>
+    </div>
+    <div class="window-controls">
+      <button class="control-button" onclick="openWindow()">
+        <i class="fas fa-arrow-up"></i> Open
+      </button>
+      <button class="control-button" onclick="closeWindow()">
+        <i class="fas fa-arrow-down"></i> Close
+      </button>
+      <button class="control-button" onclick="adjustWindow()">
+        <i class="fas fa-sliders-h"></i> Adjust Opening
+      </button>
+    </div>
+  </div>
+  <script src="window.js"></script>
+</body>
+</html>
