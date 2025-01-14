@@ -5,7 +5,7 @@ const accounts = [
     { email: "copil1@test.com", password: "copil", role: "Child", firstName: "Vlad", lastName: "Popescu" },
     { email: "copil2@test.com", password: "copil", role: "Child", firstName: "Elena", lastName: "Popescu" },
     { email: "bunica@test.com", password: "bunica", role: "Grandmother", firstName: "Ioana", lastName: "Popescu" },
-    { email: "bunicu@test.com", password: "bunica", role: "Grandfather", firstName: "Gheorghe", lastName: "Popescu" },
+    { email: "bunicu@test.com", password: "bunicu", role: "Grandfather", firstName: "Gheorghe", lastName: "Popescu" },
   ];
   
   document.getElementById("login-form").addEventListener("submit", function (event) {
